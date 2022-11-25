@@ -1,0 +1,157 @@
+.memberships_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    margin-top: $mega-mega-large*2;
+    h1{
+        margin-bottom: $mega-mega-large;
+    }
+    .offer_stack{
+        width: 100%;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .card{
+            background-color: $gray;
+            width: 400px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0rem 4rem 2rem 4rem;
+            border-radius: 1rem;
+            .card_head{
+                display: flex;
+                justify-content: space-between;
+                .card_head_info{
+                    padding-top: 2rem;
+                    h1{
+                        padding: 0;
+                        margin: 0;
+                    }
+                    p{
+                        padding: 0;
+                        margin: 0;
+
+                    }
+                }
+                .flag {
+                    width: 70px;
+                    height: 130px;
+                    // margin: 0 auto;
+                    padding-top: 15px;
+                    position: relative; 
+                    background: $green;
+                    color: white;
+                    font-size: 11px;
+                    letter-spacing: 0.2em;
+                    text-align: center;
+                    text-transform: uppercase;
+                    writing-mode:vertical-rl;
+                    vertical-align: bottom;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding-bottom: 15px;
+                    font-size: 18px;
+                    font-weight: 600;
+                  }
+                  .flag:after {
+                    content: ' ';
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 0;
+                    height: 0;
+                    border-bottom: 13px solid $gray;
+                    border-left: 35px solid transparent;
+                    border-right: 35px solid transparent;
+                  }
+            }
+            ul{
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                height: 50%;
+                li{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    p{
+                        padding: 0;
+                        margin: 0;
+                        
+                    }
+                }
+            }
+            .buy_button{
+                height: 4rem;
+                font-size: $high-mid;
+                font-family: $font;
+                background-color: $green;
+            }
+            .buy_button:hover{
+                background-color: darken($green, 5);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1420px){
+    .memberships_container{
+        .offer_stack{
+            .card{
+                width: 300px;
+                height: 500px;
+                padding: 0rem 1rem 1rem 1rem;
+                .card_head{
+                    .flag{
+                        width: 50px;
+                    }
+                    .flag:after{
+                        border-left: 25px solid transparent;
+                        border-right: 25px solid transparent;
+                    }
+                }
+                ul{
+                    li{
+                        p{
+                            font-size: $high-mid;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:1100px){
+    .memberships_container{
+        .offer_stack{
+            flex-direction: column;
+            gap: 2rem;
+            .card{
+                width: 300px;
+                height: 500px;
+                padding: 0rem 1rem 1rem 1rem;
+                .card_head{
+                    .flag{
+                        width: 50px;
+                    }
+                    .flag:after{
+                        border-left: 25px solid transparent;
+                        border-right: 25px solid transparent;
+                    }
+                }
+                ul{
+                    li{
+                        p{
+                            font-size: $high-mid;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
